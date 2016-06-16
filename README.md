@@ -6,7 +6,7 @@ Just a PoC on spying Firefox Extension.
 
 I'm here just to see what you're doing. Just ignore me...
 
-## Prerequisists
+## Prerequisites
 
 On Linux install `npm` by doing `sudo apt-get install nodejs nodejs-legacy npm`.
 

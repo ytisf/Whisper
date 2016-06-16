@@ -1,22 +1,22 @@
 {
-  "title": "Whisper",
-  "name": "whisper-addon",
-  "version": "0.0.1",
-  "description": "I'm here just to see what you're doing. Just ignore me...",
-  "main": "index.js",
-  "author": "tisf",
-  "icon": "resource://@whisper/data/hat_.png",
-  "engines": {
-    "firefox": ">=35.0"
-  },
-  "license": "GPL",
-  "keywords": [
-    "jetpack"
-  ],
-  "permissions": {
-    "private-browsing": true,
-    "tabs": true,
-    "passwords": true
-  }
+    "title": "Whisper",
+    "name": "whisper-addon",
+    "version": "0.0.1",
+    "description": "I'm here just to see what you're doing. Just ignore me...",
+    "main": "index.js",
+    "author": "tisf",
+    "icon": "resource://@whisper/data/hat_.png",
+    "engines": {
+        "firefox": ">=35.0"
+    },
+    "license": "GPL",
+    "keywords": [
+        "jetpack"
+    ],
+    "permissions": {
+        "private-browsing": true,
+        "tabs": true,
+        "passwords": true
+    }
 
 }

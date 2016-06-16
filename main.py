@@ -4,6 +4,7 @@ import os
 import sys
 import fileinput
 
+
 def which(program):
     def is_exe(fpath):
         return os.path.isfile(fpath) and os.access(fpath, os.X_OK)
@@ -25,16 +26,18 @@ if which("jpm") is None:
     sys.stderr.write("\n\t[-]\tNo 'jpm' found. Please read REAME.md file.\n\n")
     sys.exit(-1)
 
-old_server = raw_input("Please old server name[www.morirt.com]:") or "www.morirt.com"
+old_server = raw_input(
+    "Please old server name[www.morirt.com]:") or "www.morirt.com"
 new_server = raw_input("What is the server name: ")
 
 if new_server != "":
     # Replace the script
-    f = open('index.js','r')
+    f = open('index.js', 'r')
     filedata = f.read()
     f.close()
-    newdata = filedata.replace("var server = \"http://%s\"" % old_server, "var server = \"http://%s\"" % new_server)
-    f = open('index.js','w')
+    newdata = filedata.replace("var server = \"http://%s\"" %
+                               old_server, "var server = \"http://%s\"" % new_server)
+    f = open('index.js', 'w')
     f.write(newdata)
     f.close()
 
